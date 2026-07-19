@@ -8,13 +8,6 @@ Bio-Flow follows Semantic Versioning. During early development, incompatible pub
 
 ### Added
 
-### Changed
+- Initial Bio-Flow command-line interface.
+- Help and version commands.
 
-### Fixed
-
-## 0.0.1 - 2026-07-19
-
-### Added
-
-- Initial Bio-Flow command-line program.
-- Project help and version output.
