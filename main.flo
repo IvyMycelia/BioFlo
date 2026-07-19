@@ -1,4 +1,4 @@
-import "utils/test.flo" as test
+// import "utils/test.flo" as test
 
 VERSION: string = "v0.0.1"
 
@@ -57,7 +57,7 @@ func main(argc: int, argv: @char[]): int
                 working = true
                 print("Processing file: '") print(argv[i + 1]) print("'\n")
 
-                test()
+                // test()
                 // process()
 
             else if not working:
