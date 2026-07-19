@@ -1,2 +1,5 @@
-# BioFlo
-BioFlo is a Bioinformatics library for sequencing FASTA files made in the language Flower. It is currently in-development and not equipped with full features.
+# Bio-Flow
+
+A bioinformatics library written in Flower.
+
+Bio-Flow aims to provide tools for processing biological sequences and FASTA files. It is currently under development.
