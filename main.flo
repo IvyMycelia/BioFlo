@@ -1,0 +1,71 @@
+import "utils/test.flo" as test
+
+VERSION: string = "v0.0.1"
+
+func help(): void
+    print("Usage:\n")
+    print("\tbioflo\t[options]\t<filepath>\n")
+
+    print("\nOptions:\n")
+    print("\th,\thelp\tShow this help message\n")
+    print("\tv,\tversion\tShow the current version of BioFlo\n")
+    print("\t<filepath>\tSpecify the file to be processed\n")
+
+    print("\nExample:\n")
+    print("\tbioflo h\n")
+    print("\tbioflo -process main.flo\n")
+
+    print("\nTips:\n")
+    print("\tFlags are currently case sensitive: -HELP will not work\n")
+
+    print("\nPlease reach out to contact.ivy353@gmail.com for any questions, comments, or concerns <3\n")
+end
+
+func main(argc: int, argv: @char[]): int
+    if argc < 2:
+        print("Please provide an argument. Use `-h` for help\n\n")
+        return -1
+    end
+
+    working: bool = false
+
+    for i in 1..argc:
+        arg: @char = argv[i]
+
+        if arg[0] == '-':
+            while arg[0] == '-':
+                arg = arg + 1
+            end
+
+            flag: string = arg as string
+            // for i in 0..flag.length
+
+            if flag == "h" or flag == "help":
+                help()
+
+            else if flag == "v" or flag == "version":
+                print("Version:\t") print(VERSION) print('\n')
+
+            else:
+                print("Invalid Argument. Use `-h` for help\n")
+            end
+
+        else:
+            flag: string = argv[i] as string
+
+            if flag == "p" or flag == "process":
+                working = true
+                print("Processing file: '") print(argv[i + 1]) print("'\n")
+
+                test()
+                // process()
+
+            else if not working:
+                print("Invalid argument. Use `-h` for help\n")
+
+            end
+        end
+    end
+
+    return 0
+end
