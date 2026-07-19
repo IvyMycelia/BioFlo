@@ -1,6 +1,6 @@
 // import "utils/test.flo" as test
 
-VERSION: string = "v0.0.1"
+VERSION: string = "0.0.1"
 
 func help(): void
     print("Usage:\n")
