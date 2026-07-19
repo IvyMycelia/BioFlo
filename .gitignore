@@ -1,0 +1,13 @@
+# Local Flower compiler
+/Flower
+
+# Generated build artifacts
+/bin/bioflo
+/bin/bioflo.c
+/output/
+
+# Compiled Objects
+*.o
+
+# macOS metadata
+.DS_Store
