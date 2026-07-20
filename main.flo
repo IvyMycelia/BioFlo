@@ -1,4 +1,4 @@
-VERSION: string = "0.0.1"
+VERSION: string = "0.1.0"
 
 func help(): void
     print("Usage:\n")
