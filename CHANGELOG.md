@@ -6,15 +6,8 @@ Bio-Flow follows Semantic Versioning. During early development, incompatible pub
 
 ## Unreleased
 
-### Fixed
+### Added
 
-- Correct command recognition for the Bio-Flow CLI.
-- Prevent missing commands and filepaths from causing invalid argument access.
-- Prevent dash-only arguments from reading beyond the command string.
-- Return consistent exit codes for successful and invalid invocations.
-
-### Removed
-
-- Remove invalid `test.flo` import.
-- Remove placeholder calls `test` and `process`.
-
+- DNA sequence validation with support for the unknown `N` bases.
+- Nucleotide and GC-base counting.
+- GC-content calculation
